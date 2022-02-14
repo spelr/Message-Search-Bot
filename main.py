@@ -33,7 +33,8 @@ async def start_handler(_, event: Message):
         "**Demo Bot:** @AHListBot",
         reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton("مجموعة الدعم", url="https://t.me/BotsArabic"),
-             InlineKeyboardButton("قناة البوت", url="https://t.me/BotsListAR")
+             InlineKeyboardButton("قناة البوت", url="https://t.me/BotsListAR")]
+            [InlineKeyboardButton("البحث المضمن", switch_inline_query_current_chat=""), InlineKeyboardButton("البحث في محادثة", switch_inline_query="")]
         ])
     )
 
